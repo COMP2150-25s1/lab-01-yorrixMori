@@ -9,6 +9,8 @@ Today will be focused on getting you acquainted with the main tools you'll need 
 
 Don't worry about not getting a "complete" level done today. This is more about introducing you to the tools you'll need for future weeks.
 
+We recommend taking notes during these classes, either here in this README or in seperate document/book. These notes will be useful when working on your assignments.
+
 ## Tools used
 Today's task uses (but is not limited to):
 
