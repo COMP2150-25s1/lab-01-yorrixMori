@@ -129,7 +129,9 @@ The player can be controlled using a keyboard. We will introduce you to addition
 Play through your level a bit and see what you think. Does the layout make sense? Can the player make all the jumps you've created, or are they sometimes too far/narrow?
 
 ### Reflect & Iterate
-With the remaining time, keep iterating on your level to try and create something interesting for your player to navigate. Don't forget to save, commit and push your work regularly.
+With the remaining time, keep iterating on your level to try and create something interesting for your player to navigate. Once you are finished, take a screenshot of your level for next week.
+
+Don't forget to save, commit and push your work regularly.
 
 ## Next Week
 Next week, we will be getting our peers to play our small levels and getting to grips with iteration in our game design workflow.
