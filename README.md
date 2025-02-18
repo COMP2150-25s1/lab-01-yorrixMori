@@ -24,7 +24,6 @@ You will not be directly working on an assignment today, but instead setting up 
 By sheer virtue of the fact you are looking at this lab sheet, you must already have a GitHub account. Woohoo! However, if you haven't used GitHub since last year, you might have forgotten a few things.
 
 ### Linking your account and Student ID
-
 When you clicked the link to accept this task, you would have been prompted to select your Student ID from a roster that looks something like this:
 
 ![Image of the roster](images/selectnumber.png)
@@ -34,15 +33,16 @@ This roster is for <b>this unit only</b> and links your GitHub account, meaning 
 <b>Make sure you've connected your account to your Student ID before the Level Design assignment is due! Failure to do so may result in your assignment not being marked!</b>
 
 ### Cloning your repo
-
 Clone this repo onto your work station. Officially, we support GitHub Desktop in this unit, but you can use any GitHub client you'd like.
 
 To clone a repository, open up the GitHub Desktop app. Then, select File > Clone Repository. You should be able to find your repo under the "GitHub.com" tab. If not, you can copy and paste the URL to the repo instead. For more detailed instructions, ask your instructor or refer back to your COMP1150 notes. Remember to note where you are saving your repo!
 
 ![Image of the clone button](images/cloning.png)
 
-## Opening the project (5 min)
-The repo contains a Unity project. Open this project up using Unity. For this unit, we will be using Unity 2022.3.37f1, which should already be installed on the lab machines (call over your instructor if you are struggling to find it).
+## Opening the project (10 min)
+The repo contains a Unity project. Open this project up using Unity. See iLearn for the version of Unity we will be using in this unit. It is already installed on the lab machines, but you may need to locate it. To do so, click Installs > Locate in Unity hub, and navigate to the appropriate version. Call over your instructor if you are struggling to find it. 
+
+<b>You do not need to install anything on the lab computers. All the computers will have this version of Unity.</b>
 
 If you are working on your own device, you can find this version in the [Unity Archive](https://unity.com/releases/editor/archive).
 
@@ -76,8 +76,7 @@ Think of a tilemap as another layer of your scene that you can place tiles on. Y
 
 The Foreground is all the parts of the level that the player can collide with: floors, ceilings, etc. The Background sits behind this, and cannot be collided with. This makes it useful for adding some depth and texture to your level, creating rooms, guiding paths for players, etc.
 
-## Building your level (15 min)
-
+## Making some shapes (15 min)
 ### The toolbar
 With your Tilemap Palette Panel open, take a look at the tool bar along the top. You should see seven icons:
 
@@ -98,6 +97,13 @@ With your Tilemap Palette Panel open, take a look at the tool bar along the top.
 ### Placing and removing tiles
 Try creating a few different configurations of tiles using these tools. First, select one of the two tiles in the TilePalette window and try drawing them in your Scene view with the brush tool (note: you cannot add tiles by clicking on the Game view).
 
+Here are some example shapes to get you going. You don't need to copy these, but it's a good idea to create a few different variances using background and foreground tiles to ensure familiarity with the tool:
+
+| | |
+|--|--|
+|![Tile palette window](images/example1.png)|![Tile palette window](images/example4.png)|
+|![Tile palette window](images/example3.png)|![Tile palette window](images/example2.png)|
+
 The first thing you’ll notice is that as you draw, the tiles will change to correspond to those around them. That is because these are Rule Tiles, which means they are configured to change based on tiles adjacent to them on the same tilemap.
 
 We won't be diving into Rule Tiles here. For now, it's enough to understand and observe how a collection of tiles together will change to appear more cohesive. [Click here for more information on Rule Tiles](https://learn.unity.com/tutorial/using-rule-tiles).
@@ -108,11 +114,32 @@ To stop editing the tilemap, you either need to close the window or select one o
 
 Note: You can quickly delete tiles by holding down the Shift key while using the Brush or Box tool.
 
-Build a small level with a few areas for the player to navigate. Try out different shapes and configurations. Using the scene editing tools, move the Door object (under "Environment" in the hierarchy) to the "end" of your level.
+## Building your level (30 min)
+It's time to build a level! Your objective is to create a small platforming level where the player starts in one location and must navigate their way to the door. 
+
+### Paper prototype
+Before you jump into using the Tilemap, do some planning. Try sketching out your level on paper first, and then translating it to Unity once you are happy with it.
+
+If you don't have a pen/cil and paper, there are a lot of great drawing apps out there you can use. Here's a few browser-based ones to check out:
+
+* [Canva Draw](https://www.canva.com/draw/)
+* [Diagrams.net](https://app.diagrams.net/)
+* [Geogrebra](https://www.geogebra.org/)
+
+Powerpoint can also be a powerful tool for creating quick level design mock-ups! The important thing is to use a tool that helps you get the ideas out of your head and onto the paper. We do recommend drawing on actual paper, but also understand that's not always possible.
+
+Don't worry about getting your level perfect - we'll be covering the kind of level design theory that will help you with this in future weeks. For now, it's all about experimenting and getting familiar with translating your "paper" prototypes to engine. Make sure you are trying out different shapes and configurations.
+
+### Into engine
+Now, translate your paper prototype into engine by using the Tilemap Editor and scene editing tools where appropriate. 
+
+You might find that some of the ideas you had on paper don't really translate to engine, and you might also find as you are creating your level that there are new configurations you didn't think of. This is okay and all part of the design process!
+
+To move the door, use the scene editing tools and select the Door object (under "Environment" in the hierarchy).
 
 Note: The Tilemap has a `Tilemap Collider 2D`. This can slow down editing when the map gets large. It may be a good idea to simply deactivate the collider while editing the tiles if your computer has issues, just don’t forget to reactivate it when you’re done.
 
-### Saving, committing and pushing your work
+## Saving, committing and pushing your work (10 min)
 Don't forget to save, commit and push your work. This was a good habit to get into in COMP1150, and a good one to stick with this semester! Call over your instructor if you've forgotten how to do this.
 
 ## Playing the level (20 min)

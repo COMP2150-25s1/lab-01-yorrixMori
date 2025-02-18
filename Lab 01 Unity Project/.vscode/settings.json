@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Lab 01 Unity Project.sln"
+    "dotnet.defaultSolution": "Prac 01 Unity Project.sln"
 }
